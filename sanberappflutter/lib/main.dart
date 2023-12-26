@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas11/bottom_nav.dart';
-import 'package:sanberappflutter/Tugas/Tugas11/login_screen.dart';
+import 'package:sanberappflutter/Tugas/Tugas12/get_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: LoginScreen.routeNamed,
+      initialRoute: GetDataScreen.routeNamed,
       routes: {
-        LoginScreen.routeNamed: (context) => const LoginScreen(),
-        BottomScreen.routeNamed: (context) => const BottomScreen(),
+        GetDataScreen.routeNamed: (context) => const GetDataScreen(),
       },
     );
   }
